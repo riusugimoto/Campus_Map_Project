@@ -1,0 +1,40 @@
+{
+	"title": "ewd",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_dept": "m*"
+					}
+				},
+				{
+					"LT": {
+						"sections_avg": 50
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "math",
+			"sections_id": "180",
+			"sections_avg": 46.52
+		},
+		{
+			"sections_dept": "math",
+			"sections_id": "180",
+			"sections_avg": 49.95
+		}
+	]
+}

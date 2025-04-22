@@ -1,0 +1,16 @@
+{
+	"title": "where no key",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"invalid_key": 85
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["sections_dept", "sections_id", "sections_avg"],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

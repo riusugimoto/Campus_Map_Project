@@ -1,0 +1,17 @@
+{
+	"title": "Result Too Large (intentionally returning more than 5000 results)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 0
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "ResultTooLargeError"
+}
