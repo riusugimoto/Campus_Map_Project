@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@types/chai": "^4.3.19",
+    "@types/chai-as-promised": "^8.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^22.5.4",
+    "mocha": "^10.7.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "chai": "^5.1.1",
+    "chai-as-promised": "^8.0.0",
+    "fs-extra": "^11.2.0"
+  },
+  "scripts": {
+    "test": "mocha --require ts-node/register --timeout 10000 test/**/*.spec.ts"
+  }
+}
+
+
